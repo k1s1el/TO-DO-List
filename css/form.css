@@ -1,0 +1,33 @@
+.formSection {
+    background-color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.formSection__header {
+    padding: 20px;
+    border-bottom: 2px solid rgb(228, 226, 226);
+    margin-bottom: 0;
+}
+
+.form {
+    padding: 20px;
+    border-bottom: 2px solid rgb(228, 226, 226);
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+}
+
+.formInput {
+    padding: 10px;
+    border: 1px solid rgb(228, 226, 226);
+    flex-basis: 74%;
+}
+
+.formButton {
+    padding: 10px;
+    border: none;
+    background-color: teal;
+    color: white;
+    flex-basis: 24%;
+}

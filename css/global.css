@@ -1,0 +1,19 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(228, 226, 226);
+    margin: 50px 15%;
+}
+
+.mainSection {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
