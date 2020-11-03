@@ -16,6 +16,15 @@
     display: flex;
     justify-content: space-between;
     align-content: stretch;
+    
+}
+
+@media (max-width: 375px) {
+    .form {
+        flex-wrap: wrap;
+      
+    }
+   
 }
 
 .formInput {
@@ -24,10 +33,24 @@
     flex-basis: 74%;
 }
 
+@media (max-width: 375px) {
+    .formInput {
+        flex-basis: 100%;
+    }
+   
+}
+
 .formButton {
     padding: 10px;
     border: none;
     background-color: teal;
     color: white;
     flex-basis: 24%;
+}
+
+@media (max-width: 375px) {
+    .formButton {
+        flex-basis: 100%;
+    }
+   
 }
