@@ -54,3 +54,11 @@
     }
    
 }
+
+.formButton:hover {
+    background-color: rgba(0, 128, 128, 0.712);
+}
+
+.formButton:active {
+    background-color: aqua;
+}
