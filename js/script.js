@@ -1,6 +1,14 @@
 {
     const tasks = [];
 
+    const resetInput = () => {
+        document.querySelector(".js-newTask").value = "";
+    };
+
+    const setFocusOnInput = () => {
+        document.querySelector(".js-newTask").focus();
+    };
+
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
@@ -44,8 +52,8 @@
             htmlString += `
             <li${task.done ? " style=\"text-decoration: line-through\"" : ""}>
             <button class="js-done">zrobione?</button>
+            <span>${task.content}</span>
             <button class="js-remove">usuń</button>
-              ${task.content}
             </li>
             `
         };
@@ -59,12 +67,16 @@
         event.preventDefault();
 
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const newTaskField = document.querySelector(".js-newTask")
 
         if (newTaskContent === "") {
+            newTaskField.focus();
             return;
         };
 
         addNewTask(newTaskContent);
+        resetInput();
+        setFocusOnInput();
     };
 
     const init = () => {
