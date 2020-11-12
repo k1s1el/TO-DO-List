@@ -64,3 +64,41 @@
 .formButton:active {
   background-color: aqua;
 }
+
+.formButton_task--done {
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(6, 172, 0);
+  color: white;
+}
+
+.formButton_task--done:hover {
+  background-color: rgba(6, 172, 0, 0.664);
+}
+
+.formButton_task--done:active {
+  background-color: rgb(14, 248, 6);
+}
+
+.formButton_task--remove {
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(207, 0, 0);
+  color: white;
+}
+
+.formButton_task--remove:hover {
+  background-color: rgba(207, 0, 0, 0.541);
+}
+
+.formButton_task--remove:active {
+  background-color: rgb(255, 0, 0);
+}
+
+.formSection__task {
+  border-bottom: 1px rgb(228, 226, 226);
+}
