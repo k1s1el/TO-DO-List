@@ -1,22 +1,28 @@
-.formSection_tasks {
-  padding: 0px;
-  margin: 0;
-  list-style-type: none;
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
 }
 
-.formInput {
+@media (max-width: 375px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form__input {
   padding: 10px;
   border: 1px solid rgb(228, 226, 226);
   flex-basis: 74%;
 }
 
 @media (max-width: 375px) {
-  .formInput {
+  .form__input {
     flex-basis: 100%;
   }
 }
 
-.formButton {
+.form__button {
   padding: 10px;
   border: none;
   background-color: teal;
@@ -24,59 +30,10 @@
   flex-basis: 24%;
 }
 
-@media (max-width: 375px) {
-  .formButton {
-    flex-basis: 100%;
-  }
-}
-
-.formButton:hover {
+.form__button:hover {
   background-color: rgba(0, 128, 128, 0.712);
 }
 
-.formButton:active {
+.form__button:active {
   background-color: aqua;
-}
-
-.formButton_task--done {
-  width: 35px;
-  height: 35px;
-  padding: 10px;
-  border: none;
-  background-color: rgb(6, 172, 0);
-  color: white;
-}
-
-.formButton_task--done:hover {
-  background-color: rgba(6, 172, 0, 0.664);
-}
-
-.formButton_task--done:active {
-  background-color: rgb(14, 248, 6);
-}
-
-.formButton_task--remove {
-  width: 35px;
-  height: 35px;
-  padding: 10px;
-  border: none;
-  background-color: rgb(207, 0, 0);
-  color: white;
-}
-
-.formButton_task--remove:hover {
-  background-color: rgba(207, 0, 0, 0.541);
-}
-
-.formButton_task--remove:active {
-  background-color: rgb(255, 0, 0);
-}
-
-.taskItem {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-gap: 10px;
-  align-items: center;
-  padding: 10px;
-  border-bottom: 2px solid rgb(228, 226, 226);
 }

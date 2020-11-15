@@ -12,9 +12,3 @@ html {
 body {
   background-color: rgb(228, 226, 226);
 }
-
-.mainContainer {
-  max-width: 900px;
-  padding: 20px;
-  margin: 0 auto;
-}

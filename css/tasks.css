@@ -1,0 +1,52 @@
+.tasks {
+    padding: 0px;
+    margin: 0;
+    list-style-type: none;
+  }
+
+.tasks__button--toggleDone {
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(6, 172, 0);
+  color: white;
+}
+
+.tasks__button--toggleDone:hover {
+  background-color: rgba(6, 172, 0, 0.664);
+}
+
+.tasks__button--toggleDone:active {
+  background-color: rgb(14, 248, 6);
+}
+
+.tasks__button--remove {
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(207, 0, 0);
+  color: white;
+}
+
+.tasks__button--remove:hover {
+  background-color: rgba(207, 0, 0, 0.541);
+}
+
+.tasks__button--remove:active {
+  background-color: rgb(255, 0, 0);
+}
+
+.tasks__item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid rgb(228, 226, 226);
+}
+
+.tasks__content--done {
+    text-decoration: line-through;
+}
