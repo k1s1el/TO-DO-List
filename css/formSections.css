@@ -1,0 +1,26 @@
+.formSection {
+  background-color: white;
+  margin: 10px 0;
+}
+
+.formSection__header {
+  padding: 20px;
+  border-bottom: 2px solid rgb(228, 226, 226);
+  margin: 0;
+}
+
+.formSection_body {
+  padding: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
+}
+
+@media (max-width: 375px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
