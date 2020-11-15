@@ -1,33 +1,33 @@
 .formSection {
   background-color: white;
-  max-width: 1000px;
-  margin: 0 auto;
+  margin: 10px 0;
 }
 
 .formSection__header {
   padding: 20px;
   border-bottom: 2px solid rgb(228, 226, 226);
-  margin-bottom: 0;
+  margin: 0;
 }
 
-.formSection__list {
-  padding: 20px;
-  border-bottom: 2px solid rgb(228, 226, 226);
-  margin-bottom: 0;
+.formSection_tasks {
+  padding: 0px;
+  margin: 0;
   list-style-type: none;
 }
 
-.form {
+.formSection_body {
   padding: 20px;
-  border-bottom: 2px solid rgb(228, 226, 226);
-  display: flex;
-  justify-content: space-between;
-  align-content: stretch;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
 }
 
 @media (max-width: 375px) {
   .form {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -99,6 +99,12 @@
   background-color: rgb(255, 0, 0);
 }
 
-.formSection__task {
-  border-bottom: 1px rgb(228, 226, 226);
+.taskItem {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid rgb(228, 226, 226);
+
 }
