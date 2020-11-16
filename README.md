@@ -17,12 +17,12 @@ Project made for YouCode academy.
 In this project you can create a simple to-do list. You can add a new task, toggle it done or remove.
 Project is splitted into 2 sections. First one is a form field with button which adds new task.
 
-![PierwszaSekcja](images/firstsection.jpg)
+![PierwszaSekcja](images/first_section.JPG)
 
 The second one is a list where the html code is injected trough JS.
 
 
-![DrugaSekcja](images/secondsection.jpg)
+![DrugaSekcja](images/second_section.JPG)
 
 Pls see below short gif.
 
